@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> Students Form </Form></title>
+    </head>
+    <body style="background-color:rgb(236, 215, 120)">
+        <form id = "form1">
+            <h1>Students Form</h1>
+            <!--first name-->
+            <label for="fname">First name:</label>
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" size="40" required  value="">
+            <!--last name--> 
+			<label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name" size="40" required value=""><br>
+            <br>
+            <!--date-->
+            <label for="ts">Date of Registration:</label>&nbsp; &nbsp;
+            <input type="number" id="ts" min="1" max="31" maxlength="2" placeholder="DAY" name="ts">
+            <input type="text" id="ts"   pattern="[A-Za-z]{3}" placeholder="MONTH" name="ts">
+            <input type="number" id="ts" maxlength="4" max="2020" placeholder="YEAR" name="ts"><br>
+            <br>
+            <!--age-->
+            <label for="age">Age:     </label> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+            <input type="number" id="age" min="18" max="70" name="age" value=""  size="20" placeholder="18-70" required><br><br>
+			<!--genders-->
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <br>
+			<!--our products-->
+             <label for="crs">Select Class</label>
+             <input type="text" id="crs" name="crs" placeholder="Class" size="30" required > 			
+		    	<select name="crs" id="crs">
+            <!--products options-->
+			  <option value="10th">Laptops</option>
+			  <option value="11th">Anti Virus</option>
+			  <option value="12th">Keyboard & Mouse</option>
+			  <option value="UG programs ">Smart Phones</option>
+			</select> 
+			
+			
+			<br>
+			<br>
+			
+			<label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+            <br>
+            <!--contact care-->
+            <label for="ts">Customer Care:-2735825491</label>&nbsp; &nbsp;&nbsp; <br>
+            <br>
+            <br>
+            <input type="submit" value="Submit" onclick="window.alert('form Submitted')">   
+
+
+
+
+
+
+        </form>
+    </body>
+</html>
